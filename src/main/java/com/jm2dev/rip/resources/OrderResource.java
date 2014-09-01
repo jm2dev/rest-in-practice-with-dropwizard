@@ -1,7 +1,7 @@
 package com.jm2dev.rip.resources;
 
 import com.codahale.metrics.annotation.Timed;
-import com.jm2dev.rip.core.Order;
+import com.jm2dev.rip.api.Order;
 
 import javax.ws.rs.GET;
 import javax.ws.rs.Path;

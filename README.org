@@ -26,4 +26,8 @@ $ java -jar build/lib/rest-in-practice-1.0-all.jar server src/main/rip.yaml
 ** Project setup
    CLOCK: [2014-09-01 Mon 22:09]--[2014-09-01 Mon 22:38] =>  0:29
 ** Dropwizard bootstrapping
-   CLOCK: [2014-09-01 Mon 23:24]
+   CLOCK: [2014-09-01 Mon 23:24]--[2014-09-01 Mon 23:51] =>  0:27
+** Resource and healthcheck registration testing
+   CLOCK: [2014-09-01 Mon 23:52]--[2014-09-02 Tue 00:20] =>  0:28
+** Order representation
+   CLOCK: [2014-09-02 Tue 00:21]
