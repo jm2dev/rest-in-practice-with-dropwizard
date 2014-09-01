@@ -1,0 +1,27 @@
+#+TITLE: Rest In Practice with Dropwizard and Gradle
+#+AUTHOR: José Miguel
+#+EMAIL: jm@0pt1mates.com
+#+EXPORT_EXCLUDE_TAGS: noexport
+
+* Introduction
+
+I read the book and use it to practice craftmanship.
+
+* Requirements
+
+- Java
+- Gradle
+
+* Usage
+
+Build java binary and run it:
+
+#+BEGIN_SRC bash
+$ gradle shadowJar
+$ java -jar build/lib/rest-in-practice-1.0-all.jar
+#+END_SRC
+
+* Time report                                                      :noexport:
+
+** Project setup
+   CLOCK: [2014-09-01 Mon 22:09]
