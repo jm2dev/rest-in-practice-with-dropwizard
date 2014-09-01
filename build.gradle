@@ -9,7 +9,7 @@ apply plugin: 'checkstyle'
 sourceCompatibility = 1.8
 version = '1.0'
 
-mainClassName = 'com.jm2dev.app.Jm'
+mainClassName = 'com.jm2dev.rip.RipApplication'
 
 shadowJar {
     manifest {

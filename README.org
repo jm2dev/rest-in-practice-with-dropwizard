@@ -18,10 +18,12 @@ Build java binary and run it:
 
 #+BEGIN_SRC bash
 $ gradle shadowJar
-$ java -jar build/lib/rest-in-practice-1.0-all.jar
+$ java -jar build/lib/rest-in-practice-1.0-all.jar server src/main/rip.yaml
 #+END_SRC
 
 * Time report                                                      :noexport:
 
 ** Project setup
-   CLOCK: [2014-09-01 Mon 22:09]
+   CLOCK: [2014-09-01 Mon 22:09]--[2014-09-01 Mon 22:38] =>  0:29
+** Dropwizard bootstrapping
+   CLOCK: [2014-09-01 Mon 23:24]
