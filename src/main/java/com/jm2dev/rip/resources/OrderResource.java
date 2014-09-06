@@ -7,6 +7,7 @@ import javax.ws.rs.GET;
 import javax.ws.rs.Path;
 import javax.ws.rs.Produces;
 import javax.ws.rs.core.MediaType;
+import java.util.Collections;
 
 @Path("/order")
 @Produces(MediaType.APPLICATION_JSON)
@@ -17,6 +18,6 @@ public class OrderResource {
     @GET
     @Timed
     public Order showOrder() {
-        return new Order();
+        return new Order("location", Collections.EMPTY_LIST);
     }
 }
