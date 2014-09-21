@@ -7,6 +7,7 @@ apply plugin: 'build-dashboard'
 apply plugin: 'checkstyle'
 
 sourceCompatibility = 1.8
+targetCompatibility = 1.8
 version = '1.0'
 
 mainClassName = 'com.jm2dev.rip.RipApplication'
