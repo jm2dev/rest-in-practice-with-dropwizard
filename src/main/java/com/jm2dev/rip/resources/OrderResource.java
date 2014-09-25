@@ -6,10 +6,11 @@ import com.jm2dev.rip.services.OrderService;
 import com.wordnik.swagger.annotations.Api;
 import com.wordnik.swagger.annotations.ApiOperation;
 
-import javax.ws.rs.GET;
-import javax.ws.rs.Path;
-import javax.ws.rs.Produces;
+import javax.ws.rs.*;
 import javax.ws.rs.core.MediaType;
+import javax.ws.rs.core.Response;
+import java.net.URI;
+import java.net.URISyntaxException;
 
 @Api("/order")
 @Path("/order")
@@ -28,5 +29,18 @@ public class OrderResource {
         final Order flatWhiteOrder = service.fetchOrder();
 
         return flatWhiteOrder;
+    }
+
+    @ApiOperation("POST order")
+    @POST
+    @Timed
+    @Consumes(MediaType.APPLICATION_JSON)
+    public Response submitOrder(Order order) {
+        try {
+            return Response.created(new URI("uri:order")).build();
+        } catch (URISyntaxException e) {
+//            e.printStackTrace();
+            return Response.serverError().build();
+        }
     }
 }

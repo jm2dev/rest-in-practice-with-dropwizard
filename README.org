@@ -18,7 +18,7 @@ Build java binary and run it:
 
 #+BEGIN_SRC bash
 $ gradle shadowJar
-$ java -jar builds/libs/rest-in-practice-1.0-all.jar server src/main/rip.yaml
+$ java -jar build/libs/rest-in-practice-1.0-all.jar server src/main/rip.yaml
 #+END_SRC
 
 And navigate to [[http://localhost:8080/order][GET order endpoint]].
@@ -34,6 +34,12 @@ $ gradle test -Dtest.single="OrderResourceTest"
 
 Navigate to [[http://localhost:8080/swagger][/swagger]] to see available endpoints.
 
+#+BEGIN_SRC javascript
+{
+"location":"pub",
+"items":[{"name":"solo", "quantity":1,"size":"small"}]
+}
+#+END_SRC
 * Time report                                                      :noexport:
 
 #+BEGIN: clocktable :maxlevel 2 :scope subtree
@@ -66,3 +72,5 @@ Clock summary at [2014-09-21 Sun 21:59]
 ** DONE Swagger
    CLOSED: [2014-09-21 Sun 21:59]
    CLOCK: [2014-09-21 Sun 21:27]--[2014-09-21 Sun 21:59] =>  0:32
+** TODO Submit order
+   CLOCK: [2014-09-25 Thu 22:34]--[2014-09-25 Thu 23:06] =>  0:32
