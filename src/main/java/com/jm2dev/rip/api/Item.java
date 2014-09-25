@@ -31,4 +31,26 @@ public class Item {
     public String getSize() {
         return size;
     }
+
+    @Override
+    public boolean equals(Object o) {
+        if (this == o) return true;
+        if (o == null || getClass() != o.getClass()) return false;
+
+        Item item = (Item) o;
+
+        if (quantity != item.quantity) return false;
+        if (!name.equals(item.name)) return false;
+        if (!size.equals(item.size)) return false;
+
+        return true;
+    }
+
+    @Override
+    public int hashCode() {
+        int result = name.hashCode();
+        result = 31 * result + quantity;
+        result = 31 * result + size.hashCode();
+        return result;
+    }
 }
