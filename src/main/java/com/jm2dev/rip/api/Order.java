@@ -27,4 +27,24 @@ public class Order {
     public List<Item> getItems() {
         return items;
     }
+
+    @Override
+    public boolean equals(Object o) {
+        if (this == o) return true;
+        if (o == null || getClass() != o.getClass()) return false;
+
+        Order order = (Order) o;
+
+        if (!items.equals(order.items)) return false;
+        if (!location.equals(order.location)) return false;
+
+        return true;
+    }
+
+    @Override
+    public int hashCode() {
+        int result = location.hashCode();
+        result = 31 * result + items.hashCode();
+        return result;
+    }
 }

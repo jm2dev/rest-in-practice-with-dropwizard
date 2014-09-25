@@ -36,26 +36,33 @@ Navigate to [[http://localhost:8080/swagger][/swagger]] to see available endpoin
 
 #+BEGIN_SRC javascript
 {
-"location":"pub",
-"items":[{"name":"solo", "quantity":1,"size":"small"}]
+  "items": [
+    {
+      "size": "small",
+      "quantity": 1,
+      "name": "flat white"
+    }
+  ],
+  "location": "location"
 }
 #+END_SRC
 * Time report                                                      :noexport:
 
 #+BEGIN: clocktable :maxlevel 2 :scope subtree
-Clock summary at [2014-09-21 Sun 21:59]
+Clock summary at [2014-09-25 Thu 23:49]
 
 | Headline                                     | Time   |      |
 |----------------------------------------------+--------+------|
-| *Total time*                                 | *3:47* |      |
+| *Total time*                                 | *5:00* |      |
 |----------------------------------------------+--------+------|
-| Time report                                  | 3:47   |      |
+| Time report                                  | 5:00   |      |
 | \__ Project setup                            |        | 0:29 |
 | \__ Dropwizard bootstrapping                 |        | 0:27 |
 | \__ Resource and healthcheck registration... |        | 0:28 |
-| \__ Order representation                     |        | 1:37 |
+| \__ DONE Order representation                |        | 2:18 |
 | \__ Order service                            |        | 0:14 |
 | \__ DONE Swagger                             |        | 0:32 |
+| \__ DONE Submit order                        |        | 0:32 |
 #+END:
 
 ** Project setup
@@ -64,7 +71,9 @@ Clock summary at [2014-09-21 Sun 21:59]
    CLOCK: [2014-09-01 Mon 23:24]--[2014-09-01 Mon 23:51] =>  0:27
 ** Resource and healthcheck registration testing
    CLOCK: [2014-09-01 Mon 23:52]--[2014-09-02 Tue 00:20] =>  0:28
-** Order representation
+** DONE Order representation
+   CLOSED: [2014-09-25 Thu 23:49]
+   CLOCK: [2014-09-25 Thu 23:08]--[2014-09-25 Thu 23:49] =>  0:41
    CLOCK: [2014-09-06 Sat 18:01]--[2014-09-06 Sat 19:35] =>  1:34
    CLOCK: [2014-09-02 Tue 00:21]--[2014-09-02 Tue 00:24] =>  0:03
 ** Order service
@@ -72,5 +81,6 @@ Clock summary at [2014-09-21 Sun 21:59]
 ** DONE Swagger
    CLOSED: [2014-09-21 Sun 21:59]
    CLOCK: [2014-09-21 Sun 21:27]--[2014-09-21 Sun 21:59] =>  0:32
-** TODO Submit order
+** DONE Submit order
+   CLOSED: [2014-09-25 Thu 23:06]
    CLOCK: [2014-09-25 Thu 22:34]--[2014-09-25 Thu 23:06] =>  0:32
